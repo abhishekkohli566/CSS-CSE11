@@ -1,0 +1,21 @@
+.continer{
+    border: 2px black solid;
+    margin: 1%;
+    padding: 150px;
+}
+
+.box{
+    display: inline-block;
+    margin:120px;
+    padding: 60px;
+
+}
+. box box1{
+    background-color: aqua;
+}
+. box box2{
+    background-color: bisque;
+}
+. box box3{
+    background-color: blue;
+}

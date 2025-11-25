@@ -1,0 +1,31 @@
+ h2{
+    color: orange;
+}
+p{
+    color: brown;
+        text-align: center;
+
+
+}
+.par{
+    font-size : 25px;
+    color: darkred;
+}
+as{
+    color: black;
+    background-color: lightcoral;
+    font-size:  20px;
+
+} 
+div{
+    height: 200px;
+    width: 200px;
+    color: green;
+    background-color: cadetblue;
+    text-align: center;
+    align-content: center;
+    padding: 20px;
+    margin:100px ;
+    border:10px double lightcoral;
+
+}
