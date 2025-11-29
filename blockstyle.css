@@ -1,21 +1,26 @@
-.continer{
-    border: 2px black solid;
-    margin: 1%;
-    padding: 150px;
+/* .As{
+    display :block;
 }
-
-.box{
-    display: inline-block;
-    margin:120px;
-    padding: 60px;
-
+.As1{
+    display: inline;
+} */
+ .container{
+      border: 2px black solid;
+      padding: 1%;
+ }
+.box {
+  display: inline-block;
+    width:150px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
 }
-. box box1{
-    background-color: aqua;
+.box1 {
+  background-color: yellow;
 }
-. box box2{
-    background-color: bisque;
+.box2 {
+  background-color: red;
 }
-. box box3{
-    background-color: blue;
+.box3 {
+  background-color: cyan;
 }
