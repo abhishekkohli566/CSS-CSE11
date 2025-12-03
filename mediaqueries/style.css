@@ -1,0 +1,74 @@
+/* @media{
+Syntax
+} */
+
+/* @media(max-width:1024px){
+body{
+    background-color: pink;
+     
+}
+
+p{
+    font-size: 25px;
+} 
+ } */
+/* .box{
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+
+}
+.tablet{
+    @media( min-width: 768px){
+        .box{
+            width: 100%;
+            height: 100px;
+            background-color: maroon;
+        }
+
+    }
+
+        
+    
+} */
+ /* @media{
+Syntax
+} */
+
+@media(max-width:768px){
+.box
+{
+    width: 100%;
+    height: 100px;
+    background-color:pink;
+}
+}
+ @media(min-width:768px){
+    .box{
+          width: 100%;
+    height: 100px;
+        background-color: red;
+    }
+}
+
+li{
+    list-style-type: none;
+}
+@media (min-width: 320px) and (max-width:720px) {
+nav ul{
+    display: flex;
+    justify-content: space-around;
+
+
+
+    
+}}
+h5{text-align: center;
+    background-color: black;
+}
+@media (min-width: 320px) and (max-width:720px){
+    border-color: red;
+
+    color: white;
+}   
+
