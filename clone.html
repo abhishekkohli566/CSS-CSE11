@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spotify Clone Assignment</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background -->
+  <div class="background"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h1>🎵 My Spotify Clone</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Search</a>
+      <a href="#">Library</a>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main">
+    <header>
+      <h2>Good Morning</h2>
+    </header>
+
+    <section class="albums">
+      <div class="album">
+        <img src="assets/cover1.jpg" alt="Album 1" />
+        <p>Daily Mix 1</p>
+        <audio controls>
+          <source src="assets/song1.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <div class="album">
+        <img src="assets/cover2.jpg" alt="Album 2" />
+        <p>Chill Beats</p>
+        <audio controls>
+          <source src="assets/song2.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <div class="album">
+        <img src="assets/cover3.jpg" alt="Album 3" />
+        <p>Top Hits</p>
+        <audio controls>
+          <source src="assets/song1.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Player -->
+  <footer class="player">
+    <p>Now Playing: Kesariya - Arijit Singh</p>
+    <audio controls autoplay>
+      <source src="assets/song1.mp3" type="audio/mpeg" />
+    </audio>
+  </footer>
+</body>
+</html>
