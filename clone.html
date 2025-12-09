@@ -1,64 +1,191 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Spotify Clone Assignment</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Header / Navbar */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: url('https://assets.nflxext.com/ffe/siteui/vlv3/8f6f6b6b-hero.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: #e50914;
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #f40612;
+        }
+
+        /* Movie Rows */
+        .movie-section {
+            padding: 80px 50px 50px;
+        }
+
+        .movie-section h2 {
+            margin-bottom: 15px;
+        }
+
+        .movie-row {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+        }
+
+        .movie-row img {
+            width: 200px;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+
+        .movie-row img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Scrollbar hidden */
+        .movie-row::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Footer */
+        footer {
+            padding: 30px 50px;
+            background-color: #111;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .movie-row img {
+                width: 150px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <!-- Background -->
-  <div class="background"></div>
 
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <h1>🎵 My Spotify Clone</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Search</a>
-      <a href="#">Library</a>
-    </nav>
-  </aside>
-
-  <!-- Main content -->
-  <main class="main">
+    <!-- Header -->
     <header>
-      <h2>Good Morning</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">Latest</a>
+            <a href="#">My List</a>
+        </nav>
     </header>
 
-    <section class="albums">
-      <div class="album">
-        <img src="assets/cover1.jpg" alt="Album 1" />
-        <p>Daily Mix 1</p>
-        <audio controls>
-          <source src="assets/song1.mp3" type="audio/mpeg" />
-        </audio>
-      </div>
-
-      <div class="album">
-        <img src="assets/cover2.jpg" alt="Album 2" />
-        <p>Chill Beats</p>
-        <audio controls>
-          <source src="assets/song2.mp3" type="audio/mpeg" />
-        </audio>
-      </div>
-
-      <div class="album">
-        <img src="assets/cover3.jpg" alt="Album 3" />
-        <p>Top Hits</p>
-        <audio controls>
-          <source src="assets/song1.mp3" type="audio/mpeg" />
-        </audio>
-      </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <button class="btn">Join Now</button>
+        </div>
     </section>
-  </main>
 
-  <!-- Footer Player -->
-  <footer class="player">
-    <p>Now Playing: Kesariya - Arijit Singh</p>
-    <audio controls autoplay>
-      <source src="assets/song1.mp3" type="audio/mpeg" />
-    </audio>
-  </footer>
+    <!-- Movie Sections -->
+    <section class="movie-section">
+        <h2>Popular on Netflix</h2>
+        <div class="movie-row">
+            <img src="https://via.placeholder.com/200x300/ff0000/ffffff?text=Movie+1" alt="Movie 1">
+            <img src="https://via.placeholder.com/200x300/00ff00/ffffff?text=Movie+2" alt="Movie 2">
+            <img src="https://via.placeholder.com/200x300/0000ff/ffffff?text=Movie+3" alt="Movie 3">
+            <img src="https://via.placeholder.com/200x300/ffff00/000000?text=Movie+4" alt="Movie 4">
+            <img src="https://via.placeholder.com/200x300/ff00ff/ffffff?text=Movie+5" alt="Movie 5">
+        </div>
+    </section>
+
+    <section class="movie-section">
+        <h2>Trending Now</h2>
+        <div class="movie-row">
+            <img src="https://via.placeholder.com/200x300/ff6600/ffffff?text=Movie+6" alt="Movie 6">
+            <img src="https://via.placeholder.com/200x300/00ffff/000000?text=Movie+7" alt="Movie 7">
+            <img src="https://via.placeholder.com/200x300/9900ff/ffffff?text=Movie+8" alt="Movie 8">
+            <img src="https://via.placeholder.com/200x300/333333/ffffff?text=Movie+9" alt="Movie 9">
+            <img src="https://via.placeholder.com/200x300/ff9999/000000?text=Movie+10" alt="Movie 10">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Netflix Clone. Built with HTML & CSS only.
+    </footer>
+
 </body>
 </html>
